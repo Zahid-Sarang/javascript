@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <section class="todo_container">
+        <h1 class="todo_title">Todoist D&D</h1>
+        <div class="todo_add_container">
+            <div class="todo_inputs">
+                <input type="text" placeholder="Task Name" name="task-name" id="task_title" />
+                <input type="text" placeholder="Description" name="description" id="task_description" />
+                <input type="datetime-local" name="end_date" id="end_date" />
+            </div>
+            <div class="todo_btns">
+                <button type="submit" class="todo_btn_submit" onclick="createTask()" id="submit_btn"
+                    disabled="true">Submit</button>
+                <button type="button" class="todo_btn_cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="todos_list">
+            <h2 class="list_title">Inbox</h2>
+            <div class="todos_status">
+                <div class="todos_active">
+                </div>
+                <div class="todos_inProgress">
+                </div>
+                <div class="todos_completed">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+/* FCFAF8 (side bar bg)*/
+/* DC4B3E (primar tomato) */
+
+/* Base Styles */
+body {
+  font-style: italic;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Container Styles */
+.todo_container {
+  margin-left: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.todo_title {
+  color: #dc4b3e;
+}
+
+/* Form Container Styles */
+.todo_add_container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: -1px 1px 25px -14px rgb(32, 32, 32);
+  padding: 10px;
+}
+
+.todo_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo_inputs input {
+  border: none;
+  padding: 5px;
+  font-size: medium;
+}
+
+.todo_inputs input:first-child::placeholder {
+  font-weight: bold;
+}
+
+.todo_inputs input:focus {
+  outline: none;
+}
+
+input[type="datetime-local"] {
+  width: 40%;
+}
+
+/* Buttons Container Styles */
+.todo_btns {
+  border-top: 1px solid #e4e4e4;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo_btn_submit {
+  background-color: #dc4b3e;
+  color: white;
+  cursor: pointer;
+}
+
+.todo_btn_submit:disabled {
+  background-color: #dc4b3e;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.todo_btn_cancel {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+/* todos list */
+
+.todos_list {
+  margin: 50px 10px 0px 0px;
+  width: 95%;
+  height: 650px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list_title {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.todos_status {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+.todos_status > div {
+  background-color: #fcfaf8;
+  width: 100%;
+  height: 500px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.todos_active,
+.todos_inProgress,
+.todos_completed {
+  overflow: auto;
+  height: 400px;
+}
+
+.todos_active > p:first-child,
+.todos_inProgress > p:first-child,
+.todos_completed > p:first-child {
+  color: #dc4b3e;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.todos_info {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  cursor: grab;
+}
+
+.todos_info > :first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.todos_info > :nth-child(2) {
+  color: #808080;
+}
